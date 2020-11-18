@@ -1,0 +1,24 @@
+stages:
+  - build
+  - "Merge Semaphore"
+
+
+# you can delete this line if you're not using Docker
+# image: busybox:latest
+image: bashell/alpine-bash
+
+
+# build1:
+#   stage: build
+#   script:
+#     - echo "Do your build here"
+
+CD_Semaphore:
+  stage: "Merge Semaphore"
+  script:
+    # - ls -al
+    # - pwd
+    - chmod +x ./semaphore.sh
+    # - ls -al
+    - ./semaphore.sh $ORIGIN_PROJECT_ID #$CI_PROJECT_ID
+    - ./semaphore.sh
