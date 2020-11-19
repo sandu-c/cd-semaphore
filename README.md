@@ -12,3 +12,9 @@ example run:
 ```
 ./semaphore_exec.sh -p 256 -h gitlab.host.int -t <token> -b latest
 ```
+
+-p gitlab target projectid
+-a attempts / retries 
+-h gitlab hostname
+-t gitlab token 
+-b gitlab target project branch
