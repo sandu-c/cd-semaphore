@@ -8,4 +8,7 @@ Having a clean green pipeline for the main branch is key in continuous delivery.
 
 Merging you branch on top of other branches where there are failing pipeline jobs is a bad practice, and if you did this in the past you should be ashamed of yourself.
 
-
+example run:
+```
+./semaphore_exec.sh -p 256 -h gitlab.host.int -t <token> -b latest
+```
