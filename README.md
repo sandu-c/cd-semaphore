@@ -1,4 +1,4 @@
-# cd-semaphore
+# gitlab cd-semaphore
 
 A semaphore script that fails gitlab jobs for merge requests where the target branch has failed jobs.
 (To be used in cojunction with "Pipelines must succeed" merge check feature) see https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds
